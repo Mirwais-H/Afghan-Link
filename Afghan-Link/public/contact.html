@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Afghans in America</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="https://i.ibb.co/t2t8K2P/Screenshot-3-7-2024-1995.jpg" alt="Website Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="membership.html">Membership</a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <a href="login.html" class="login-btn">Login</a>
+        <div class="user-profile" id="user-profile" style="display: none;">
+          <div class="avatar" id="avatar-text"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+    <section class="main-content">
+        <div class="container">
+            <h2>Contact Our Community</h2>
+            <p>Get in touch with us! Use the form below to send us a message, ask questions, or provide feedback. We look forward to hearing from you.</p>
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Afghans in America. All rights reserved.</p>
+        <ul>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </footer>
+      
+      <!-- Success and Error Popups -->
+      <div id="popup" class="popup">
+        <span id="popup-message"></span>
+        <button onclick="closePopup()">Close</button>
+      </div>
+    
+      <script src="scripts.js"></script>
+    </body>
+    </html>
